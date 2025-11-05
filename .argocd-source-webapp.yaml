@@ -1,3 +1,3 @@
 kustomize:
   images:
-  - youssefwaheeds/nodeapp:latest@sha256:6b6bd4ca89bd8045e927e190347b1d79d834b20da2dcfdbdc61193b1e93abeaa
+  - youssefwaheeds/nodeapp:v1.4
