@@ -49,9 +49,10 @@
     Edited the application configuration using:
     ---> kubectl edit app -n argocd webapp
     
-    Added the following annotations uner metadata to enable automatic image updates:
+    Added the following annotations under metadata to enable automatic image updates:
     
     annotations:
+   
       argocd-image-updater.argoproj.io/image-list: youssefwaheeds/nodeapp:v1.x
    
       argocd-image-updater.argoproj.io/nodeapp.update-strategy: semver
