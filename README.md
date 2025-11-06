@@ -36,6 +36,7 @@
 4. Git Credentials Secret
    
     Created a Kubernetes secret to store GitHub credentials securely:
+   
     kubectl -n argocd create secret generic git-creds \
       --from-literal=username=youssefwahiid \
       --from-literal=password=<your_github_pat>
@@ -47,6 +48,7 @@
     Added the application to the ArgoCD dashboard.
     Installed ArgoCD Image Updater.
     Edited the application configuration using:
+   
     ---> kubectl edit app -n argocd webapp
     
     Added the following annotations under metadata to enable automatic image updates:
@@ -63,6 +65,7 @@
     Built and tagged a new Docker image:
     
     docker tag nodeapp:v1.1 youssefwaheeds/nodeapp:v1.7
+   
     docker push youssefwaheeds/nodeapp:v1.7
     
     ArgoCD Image Updater automatically detected the new tag.
