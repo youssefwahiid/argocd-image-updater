@@ -53,7 +53,9 @@
     
     annotations:
       argocd-image-updater.argoproj.io/image-list: youssefwaheeds/nodeapp:v1.x
+   
       argocd-image-updater.argoproj.io/nodeapp.update-strategy: semver
+   
       argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/git-creds
 ------------------------------------------------------------------------------------------------------------------------------
 6. Image Update Process
@@ -70,5 +72,7 @@
 7. Verification
 
     Checked logs to confirm the update process:
+   
     kubectl logs -n argocd <image-updater-pod-name>
+    
     Verified that GitHub was updated automatically and the cluster was running the latest image.
