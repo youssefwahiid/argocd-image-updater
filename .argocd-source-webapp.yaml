@@ -1,4 +1,4 @@
 kustomize:
   images:
   - youssefwaheeds/nodeapp:v1.9
-  - 428346553093.dkr.ecr.us-east-1.amazonaws.com/youssefwaheeds/nodeapp:v1.8
+  - 428346553093.dkr.ecr.us-east-1.amazonaws.com/youssefwaheeds/nodeapp:v1.9
